@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify Facebook login for valid username and invalid password.",
+        "description": "",
+        "id": "verify-facebook-login;verify-facebook-login-for-valid-username-and-invalid-password.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8280578900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify the user is on Facebook page.",
+            "match": {
+              "location": "StepDefinition.verify_the_user_is_on_Facebook_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 332403700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"muralidharan2471995@gmail.com\" and invalid \"9894250818\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"muralidharan2471995@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"9894250818\"",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinition.user_enters_valid_and_invalid(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93950000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click the login button.",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 222600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Error page for invalid password is displayed.",
+            "match": {
+              "location": "StepDefinition.error_page_for_invalid_password_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Facebook Login",
+    "description": "",
+    "id": "verify-facebook-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Facebook.feature",
+    "tags": []
+  }
+]
